@@ -20,6 +20,11 @@ header {
     padding-right: 30px;
 }
 
+.web-header {
+    width: 100%;
+    height: 120px;
+}
+
 body {
     font-size: 16rw;
     background-image: url("../Assests/Images/background.jpeg");
@@ -37,27 +42,23 @@ body {
     animation: breath 20s linear infinite;
 }
 
-form {
-    /* background-color: rgb(121, 68, 147);*/
-    background-image: linear-gradient(purple, violet);
-    position: absolute;
-    width: 20%;
-    padding: 15px;
-    border: 2px solid lightgray;
-    margin-top: 5%;
-    margin-left: 70%;
-    border-radius: 5px;
-    box-shadow: inset;
+#searchBox {
+    border-radius: 25px;
+    margin: 10px;
+    font-size: 17px;
+    font: outline;
+    text-align: center;
+    color: black;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: rgb(157, 138, 187);
 }
 
-.quote {
-	float: left;
-	margin-top: 5%;
-    padding-left: 50px;
-    font-size: 50pt;
-    text-rendering: geometricPrecision;
-    color: #6a77b1;
-    font-weight: 600;
+#searchBtn {
+	margin: 10px;
+	background-color: hsl(298, 49%, 75%);
+	border-radius: 25px;
 }
 
 label {
