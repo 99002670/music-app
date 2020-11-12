@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="../Styles/loginStyle.css" />
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/signupValidate.js"></script>
+  </head>
+
+  <body>
+    <div class="quote"">
+      <p>
+        When words fail,<br> music speaks
+      </p>
+     </div>
+    <form
+      action=""
+      name="regForm"
+      novalidate="true"
+      onsubmit="return signupValidate()"
+    >
+      <h2>Sign up</h2>
+      <hr />
+      <div class="row">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          name="name"
+          id="name"
+        />
+        <div id="errName" class="err"></div>
+      </div>
+      <div class="row">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          name="email"
+          id="email"
+        />
+        <div id="errEmail" class="err"></div>
+      </div>
+      <div class="row">
+        <label for="phone">Mobile phone</label>
+        <input
+          type="text"
+          placeholder="Enter your Phone Number"
+          id="phone"
+          name="phone"
+        />
+        <div id="errPhone" class="err"></div>
+      </div>
+      <div class="row">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="password"
+          name="password"
+        />
+        <div id="errPassword" class="err"></div>
+      </div>
+      <div class="row">
+        <label for="password">Confirm Password</label>
+        <input
+          type="password"
+          placeholder="Re-enter Password"
+          id="confirmPassword"
+          name="confirmPassword"
+        />
+        <div id="errConfirmPassword" class="err"></div>
+      </div>
+      <div>
+        <button id="btn">Sign Up</button>
+        <br />
+      </div>
+      <div>
+        <a id="ref" href="index.html" role="button">Already a member? Log in</a>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/* @-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+} */
+@keyframes breath {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-size: 140% 140%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+header {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body {
+    font-size: 16rw;
+    background-image: url("../Assests/Images/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    /* height: 100vh; */
+    height: auto;
+    -webkit-animation: backgroundScroll 15s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    /* animation: backgroundScroll 15s linear 1;
+	animation-fill-mode: forwards; */
+    animation: breath 20s linear infinite;
+}
+
+form {
+    /* background-color: rgb(121, 68, 147);*/
+    background-image: linear-gradient(purple, violet);
+    position: absolute;
+    /* width: 35vh; */
+    width: 20%;
+    padding: 15px;
+    border: 2px solid lightgray;
+    margin-top: 5%;
+    margin-left: 70%;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.quote {
+    float: left;
+    padding-left: 50px;
+    font-size: 50pt;
+    text-rendering: geometricPrecision;
+    color: #6a77b1;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    border: 1px solid lightgrey;
+    padding: 5px;
+    display: block;
+    width: 95%;
+    border-radius: 2px;
+}
+
+input.inline {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.row {
+    padding-bottom: 15px;
+}
+
+.err {
+    font-size: 0.8em;
+    color: rgb(249, 253, 0);
+}
+
+#btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-color: violet;
+    background-color: rgb(223, 13, 223);
+    margin-top: 15px;
+    box-shadow: 0 3px 4px rgb(49, 1, 49);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#btn:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#ref {
+    padding: 10%;
+    color: rgb(0, 0, 0);
+}
+
+.w3-content {
+    position: relative;
+    margin-top: 0em;
+}
+
+.w3-btn,
+.w3-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.w3-btn,
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.w3-disabled,
+.w3-btn:disabled,
+.w3-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.w3-disabled *,
+:disabled * {
+    pointer-events: none;
+}
+
+.w3-bar-block .w3-dropdown-hover .w3-button,
+.w3-bar-block .w3-dropdown-click .w3-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+.w3-content button {
+    position: absolute;
+    top: 32%;
+}
+
+.w3-display-right {
+    right: 0;
+}
+
+.w3-display-left {
+    left: 0;
+}
