@@ -42,23 +42,39 @@ body {
     animation: breath 20s linear infinite;
 }
 
+#search-container {
+	width: 100%;
+	float: center;
+}
+#search-box-container {
+	width: 80%;
+	float: left;
+}
+
+#search-btn-container {
+	width: 80%;
+	float: left;
+}
+
 #searchBox {
     border-radius: 25px;
-    margin: 10px;
-    font-size: 17px;
-    font: outline;
-    text-align: center;
-    color: black;
-    border: 1px solid grey;
-    float: left;
-    width: 90%;
+    /* margin: 1%; */
+    /* font-size: 17px; */
+    /* font: outline; */
+    /* text-align: center; */
+    /* color: black; */
+    /* border: 1px solid grey; */
+    /* float: left; */
+    width: 100%;
     background: rgb(157, 138, 187);
 }
 
 #searchBtn {
-	margin: 10px;
+	/* margin: 1%; */
 	background-color: hsl(298, 49%, 75%);
 	border-radius: 25px;
+	width: 100%;
+	/* float: left; */
 }
 
 label {
